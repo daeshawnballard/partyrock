@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CD539AA41D862EEE00069CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD539AA31D862EEE00069CC2 /* AppDelegate.swift */; };
-		CD539AA61D862EEE00069CC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD539AA51D862EEE00069CC2 /* ViewController.swift */; };
+		CD539AA61D862EEE00069CC2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD539AA51D862EEE00069CC2 /* MainVC.swift */; };
 		CD539AA91D862EEE00069CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD539AA71D862EEE00069CC2 /* Main.storyboard */; };
 		CD539AAB1D862EEE00069CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD539AAA1D862EEE00069CC2 /* Assets.xcassets */; };
 		CD539AAE1D862EEE00069CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD539AAC1D862EEE00069CC2 /* LaunchScreen.storyboard */; };
+		CD79F52E1D863D7100ADCE42 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD79F52D1D863D7100ADCE42 /* still time.ttf */; };
+		CD79F5311D863EA300ADCE42 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79F5301D863EA300ADCE42 /* VideoVC.swift */; };
+		CD79F5331D87A06500ADCE42 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79F5321D87A06500ADCE42 /* PartyCell.swift */; };
+		CD79F5351D88939500ADCE42 /* PartyRocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79F5341D88939500ADCE42 /* PartyRocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD539AA01D862EEE00069CC2 /* Partyrock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Partyrock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD539AA31D862EEE00069CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD539AA51D862EEE00069CC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD539AA51D862EEE00069CC2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		CD539AA81D862EEE00069CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD539AAA1D862EEE00069CC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD539AAD1D862EEE00069CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD539AAF1D862EEE00069CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD79F52D1D863D7100ADCE42 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		CD79F5301D863EA300ADCE42 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		CD79F5321D87A06500ADCE42 /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		CD79F5341D88939500ADCE42 /* PartyRocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		CD539AA21D862EEE00069CC2 /* Partyrock */ = {
 			isa = PBXGroup;
 			children = (
+				CD79F52F1D863D7600ADCE42 /* Files */,
+				CD79F52B1D86391B00ADCE42 /* Model */,
+				CD79F52A1D86390F00ADCE42 /* View */,
+				CD79F52C1D86392D00ADCE42 /* Controller */,
 				CD539AA31D862EEE00069CC2 /* AppDelegate.swift */,
-				CD539AA51D862EEE00069CC2 /* ViewController.swift */,
 				CD539AA71D862EEE00069CC2 /* Main.storyboard */,
-				CD539AAA1D862EEE00069CC2 /* Assets.xcassets */,
 				CD539AAC1D862EEE00069CC2 /* LaunchScreen.storyboard */,
+				CD539AAA1D862EEE00069CC2 /* Assets.xcassets */,
 				CD539AAF1D862EEE00069CC2 /* Info.plist */,
 			);
 			path = Partyrock;
+			sourceTree = "<group>";
+		};
+		CD79F52A1D86390F00ADCE42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD79F5321D87A06500ADCE42 /* PartyCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD79F52B1D86391B00ADCE42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD79F5341D88939500ADCE42 /* PartyRocks.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CD79F52C1D86392D00ADCE42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD539AA51D862EEE00069CC2 /* MainVC.swift */,
+				CD79F5301D863EA300ADCE42 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD79F52F1D863D7600ADCE42 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD79F52D1D863D7100ADCE42 /* still time.ttf */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD539AAE1D862EEE00069CC2 /* LaunchScreen.storyboard in Resources */,
+				CD79F52E1D863D7100ADCE42 /* still time.ttf in Resources */,
 				CD539AAB1D862EEE00069CC2 /* Assets.xcassets in Resources */,
 				CD539AA91D862EEE00069CC2 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD539AA61D862EEE00069CC2 /* ViewController.swift in Sources */,
+				CD79F5311D863EA300ADCE42 /* VideoVC.swift in Sources */,
+				CD539AA61D862EEE00069CC2 /* MainVC.swift in Sources */,
+				CD79F5331D87A06500ADCE42 /* PartyCell.swift in Sources */,
+				CD79F5351D88939500ADCE42 /* PartyRocks.swift in Sources */,
 				CD539AA41D862EEE00069CC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +350,7 @@
 				CD539AB41D862EEE00069CC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
